@@ -1,0 +1,86 @@
+.budget-card {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-m);
+  padding: 16px 18px;
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.budget-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.budget-total {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.budget-total.over {
+  color: var(--rose);
+}
+
+.budget-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--surface-raised);
+  margin-bottom: 8px;
+}
+
+.budget-bar-segment {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.budget-warning {
+  font-size: 12px;
+  color: var(--rose);
+  margin: 4px 0 12px;
+}
+
+.budget-note {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin: 4px 0 12px;
+}
+
+.budget-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+}
+
+.legend-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-label {
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.legend-value {
+  font-family: var(--font-mono);
+  color: var(--text);
+}

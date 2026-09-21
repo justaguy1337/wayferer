@@ -1,0 +1,29 @@
+.map-wrap {
+  height: 260px;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+}
+
+.map-empty {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-faint);
+  font-size: 12.5px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-m);
+}
+
+.leaflet-popup-content-wrapper {
+  background: #161d2e;
+  color: #edeff5;
+  font-family: "Manrope", sans-serif;
+  font-size: 12.5px;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background: #161d2e;
+}

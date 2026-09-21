@@ -1,0 +1,63 @@
+.composer {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin: 12px 32px 24px;
+  padding: 10px 10px 10px 16px;
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-l);
+}
+
+.composer textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  resize: none;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.5;
+  max-height: 160px;
+  padding: 6px 0;
+}
+
+.composer textarea:focus {
+  outline: none;
+}
+
+.composer textarea::placeholder {
+  color: var(--text-faint);
+}
+
+.composer textarea:disabled {
+  color: var(--text-faint);
+}
+
+.composer-send {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: var(--amber);
+  color: #1a1305;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.composer-send:hover:not(:disabled) {
+  background: #f0b158;
+}
+
+.composer-send:active:not(:disabled) {
+  transform: scale(0.94);
+}
+
+.composer-send:disabled {
+  background: var(--surface-hover);
+  color: var(--text-faint);
+  cursor: default;
+}

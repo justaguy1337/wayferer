@@ -1,0 +1,117 @@
+.day-card {
+  display: flex;
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.day-rail {
+  flex-shrink: 0;
+  width: 74px;
+  padding: 16px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface-raised);
+  text-align: center;
+}
+
+.day-number {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--amber);
+}
+
+.day-date {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.day-weather {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  margin-top: 4px;
+  padding: 2px 7px;
+  border-radius: 20px;
+}
+
+.day-weather.rainy {
+  color: var(--teal);
+  background: rgba(79, 189, 176, 0.12);
+}
+
+.day-weather.sunny {
+  color: var(--amber);
+  background: rgba(232, 163, 61, 0.12);
+}
+
+.day-perforation {
+  flex-shrink: 0;
+  width: 0;
+  border-left: 1.5px dashed var(--line);
+  margin: 14px 0;
+}
+
+.day-activities {
+  flex: 1;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.day-empty {
+  color: var(--text-faint);
+  font-size: 12.5px;
+  margin: 4px 0;
+}
+
+.activity {
+  display: flex;
+  gap: 12px;
+}
+
+.activity-time {
+  flex-shrink: 0;
+  width: 46px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  padding-top: 1px;
+}
+
+.activity-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.activity-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.activity-category {
+  font-size: 11px;
+  color: var(--text-faint);
+  text-transform: lowercase;
+}
+
+.activity-warning {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--rose);
+  margin-top: 2px;
+}
